@@ -365,7 +365,7 @@ return view.extend({
         }
 
         // 风扇速度读取文件路径配置
-        o = s.option(form.Value, 'fan_speed_file', _('Fan Speed File'), _('Path to the fan speed reading file (e.g., /sys/class/hwmon/hwmon7/fan1_input)'));
+        o = s.option(form.Value, 'fan_speed_file', _('Fan Speed File'), _('Path to the fan speed reading file (e.g., /sys/class/hwmon/hwmon9/fan1_input)'));
         o.placeholder = FAN_SPEED_FILE_PLACEHOLDER;
 
         // 读取并显示当前风扇速度
@@ -550,4 +550,5 @@ return view.extend({
         return renderedForm;
     }
 });
+
 
