@@ -9,8 +9,8 @@
  * 当配置文件中没有设置相应参数时使用这些默认值
  */
 const THERMAL_FILE_PLACEHOLDER = '/sys/devices/virtual/thermal/thermal_zone0/temp';         // 默认温度传感器文件路径
-const FAN_PWM_FILE_PLACEHOLDER = '/sys/class/hwmon/hwmon7/pwm1';                            // 默认风扇PWM控制文件路径
-const FAN_SPEED_FILE_PLACEHOLDER = '/sys/class/hwmon/hwmon7/fan1_input';                    // 默认风扇速度读取文件路径
+const FAN_PWM_FILE_PLACEHOLDER = '/sys/class/hwmon/hwmon9/pwm1';                            // 默认风扇PWM控制文件路径
+const FAN_SPEED_FILE_PLACEHOLDER = '/sys/class/hwmon/hwmon9/fan1_input';                    // 默认风扇速度读取文件路径
 
 /**
  * 读取文件内容的异步函数
@@ -550,3 +550,4 @@ return view.extend({
         return renderedForm;
     }
 });
+
